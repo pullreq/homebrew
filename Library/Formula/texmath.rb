@@ -15,9 +15,6 @@ class Texmath < Formula
 
   depends_on "ghc" => :build
   depends_on "cabal-install" => :build
-  depends_on "gmp"
-
-  fails_with(:clang) { build 425 } # clang segfaults on Lion
 
   def install
     cabal_sandbox do

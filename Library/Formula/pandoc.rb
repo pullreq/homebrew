@@ -17,12 +17,6 @@ class Pandoc < Formula
 
   depends_on "ghc" => :build
   depends_on "cabal-install" => :build
-  depends_on "gmp"
-
-  fails_with :clang do
-    build 425
-    cause "clang segfaults on Lion"
-  end
 
   def install
     cabal_sandbox do

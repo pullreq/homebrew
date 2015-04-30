@@ -17,7 +17,6 @@ class Cgrep < Formula
 
   depends_on "ghc" => :build
   depends_on "cabal-install" => :build
-  depends_on "gmp"
 
   def install
     install_cabal_package

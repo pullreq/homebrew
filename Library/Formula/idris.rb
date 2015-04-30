@@ -16,7 +16,6 @@ class Idris < Formula
 
   depends_on "ghc" => :build
   depends_on "cabal-install" => :build
-  depends_on "gmp"
 
   depends_on "libffi" => :recommended
   depends_on "pkg-config" => :build if build.with? "libffi"
